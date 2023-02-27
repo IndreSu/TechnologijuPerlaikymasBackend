@@ -1,0 +1,4 @@
+--INSERT INTO RECORD (NAME,SURNAME,DATE_OF_BIRTH,MOBILE_NUMBER,TYPE) VALUES
+--
+--	 ('Jonas','Jonaitis','1999-02-24','8622 22222','Regular'),
+--	 ('Petras','Petraitis','1988-02-22','8633 33333','Loyal');

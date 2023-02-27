@@ -1,0 +1,41 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    url: 'jdbc:h2:tcp://localhost/~/database'
+    driverClassName: org.h2.Driver
+    username: sa
+  flyway:
+    enabled: false
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    generate-ddl: false
+    show-sql: true
+    format-sql: true
+  h2:
+    console:
+      enabled: true
+  jackson:
+    default-property-inclusion: non_null
+application:
+  version: '@project.version@'
+
+logging:
+  level:
+    lt:
+      techin: DEBUG
+    org:
+      springframework: INFO
+
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
+      type:
+        descriptor:
+          sql:
+            BasicBinder: DEBUG
+
+
